@@ -78,7 +78,7 @@ router.get('/login', function(req, res) {
     })
   })
 
-  //User
+  //User vkl
 router.get('/user',async function(req, res, next) {
     var check= await Login.findOne({username:req.session.username})
     res.render('user',{check:check})
